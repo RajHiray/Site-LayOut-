@@ -1,0 +1,78 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh !important;
+    margin-left: -15rem !important;
+    -webkit-transition: margin .25s ease-out !important;
+    -moz-transition: margin .25s ease-out !important;
+    -o-transition: margin .25s ease-out !important;
+    transition: margin .25s ease-out !important;
+    background-color: #f8f9fa !important;
+    position: fixed;
+}
+
+    #sidebar-wrapper .sidebar-heading {
+        padding: 0.875rem 1.25rem !important;
+        font-size: 1.2rem !important;
+    }
+
+    #sidebar-wrapper .list-group {
+        width: 15rem !important;
+        background-color: #f8f9fa !important;
+    }
+
+#page-content-wrapper {
+    min-width: 100vw !important;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0 !important;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0 !important;
+    }
+
+    #page-content-wrapper {
+        min-width: 0 !important;
+        width: 100% !important;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem !important;
+    }
+}
+#page-content-wrapper {
+    min-width: 0 !important;
+    width: 100% !important;
+    position: absolute;
+    left:200px
+}
